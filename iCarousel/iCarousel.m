@@ -395,7 +395,7 @@ NSComparisonResult compareViewDepth(UIView *view1, UIView *view2, iCarousel *sel
 
 - (void)removeViewAtIndex:(NSInteger)index
 {
-    NSMutableDictionary *newItemViews = [NSMutableDictionary dictionaryWithCapacity:[_itemViews count] - 1];
+    NSMutableDictionary *newItemViews = [NSMutableDictionary new];
     for (NSNumber *number in [self indexesForVisibleItems])
     {
         NSInteger i = [number integerValue];
